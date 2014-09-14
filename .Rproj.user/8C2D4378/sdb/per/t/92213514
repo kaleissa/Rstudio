@@ -1,0 +1,16 @@
+{
+    "contents" : "pollutantmean<-function(directory=\"specdata\",pollutant=\"nitrate\",id=1:332){\nfiles_list <- list.files(directory, full.names=TRUE)\ndat <- data.frame()\nfor (i in id) {dat <- rbind(dat, read.csv(files_list[i]))}\nx<-mean(dat[,pollutant],na.rm=TRUE)\nround(x, digits=3)\n}\n",
+    "created" : 1410732656218.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4267102519",
+    "id" : "92213514",
+    "lastKnownWriteTime" : 1410732714,
+    "path" : "~/Coursera/Rstudio/pollutantmean.r",
+    "project_path" : "pollutantmean.r",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
